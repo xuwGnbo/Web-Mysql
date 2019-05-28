@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Signin</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/signin.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery-3.1.1.min.js"></script>
+    <script src="../static/js/manager.js"></script>
+    <script>
+
+    </script>
+
+</head>
+<body style="background-image: url(../static/image/登录a.jpg);background-size:cover">
+    <div id="test"></div>
+        <div class="navbar-wrapper">
+            <div class="container">
+                <nav class="navbar navbar-inverse navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Ex6</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">注册</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+   <div class="container" >
+        <div class="row">
+            <form class="form-signin" action='/manager_validate_login' method='post' onsubmit="return check_manager_info()">
+                <br>
+                <h3 class="form-signin-heading" align="center">请输入用户名和密码</h3>
+                <div class="form-group-lg">
+                    <input type="tel" id="inputAccount" name="inputAccount" class="form-control" placeholder="用户名  ord+5位数字" required autofocus>
+                </div>
+                <br>
+                <div class="form-group-lg">
+                    <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="密码  不少于6位(字母+数字)" required>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <button id="btn_SignIn" class="btn btn-lg btn-primary btn-block" type="button">注册</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <button id="btn_LogIn" class="btn btn-lg btn-primary btn-block" type="submit" >登录</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+  </body>
+</html>
